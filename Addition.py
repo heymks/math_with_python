@@ -1,37 +1,115 @@
-# Improve your Addition !
-
-# Enter the First input of number which is inclusive
-# Enter the Second input of number which is excusive
-
-# And Enjoy !
+import numpy as np
 
 
-import numpy as np # imports NumPy library, if you haven't installed please check numpy.org
 
-def Addition(): # Defines a function
-    a = int(input("Please enter the First Number : ")) # Asks for input and assigns to variable a
-    b = int(input("Please enter the Second Number : ")) # Asks for input and assigns to variable b
-    
-    x = np.random.randint(a, b) # Generates a random number and assigns to variable x
-    y = np.random.randint(a, b) # Generates a random number and assigns to variable y
-    
-    print(x,"+",y) # Prints x + y
-    
-    f = input() # Asks for input and assigns to f
-    
-    while int(f) == x+y: # Compares the input with x+y
-        x = np.random.randint(a,b) # Generates a random number and assigns to variable x
-        y = np.random.randint(a,b) # Generates a random number and assigns to variable y
-        print(x,"+",y) # Prints x + y
-        f = input() # Asks for input and assigns to f
+def main():
+    what = input('"+" for Addition, "-" for Substraction, "x" for Multilication "/" for Division ')
+
+    if what.lower() == "+":
+        addition()
         
-    else: # If the above condions fails, this runs
-        print(x,"+",y,"=", x+y) # Prints x + y and value of x + y
-        choice = input("Do You want to start again ! Yes or No, Please :") # Asks if want to continue or not
-        if choice.lower() == "yes": # Matches the input
-            Addition() # Runs the module
-        elif choice.lower() == "no": # Matches the input
-            print("Thanks for playing !") # Prints message
-        else: # If the Above conditions fails, this runs
-             print("See You again in future !") # Prints the message
-Addition() # Runs the main module for the first time
+    elif what.lower() == "x":
+        multiplication()
+
+    elif what.lower() == "-":
+        substraction()
+
+    elif what.lower() == "/":
+        division()
+
+    else:
+        print()
+
+
+def addition():
+    a = int(input("Please enter the First Number : "))
+    b = int(input("Please enter the Second Number : "))
+    
+    x = np.random.randint(a, b)
+    y = np.random.randint(a, b)
+    
+    print(x,"+",y)
+    
+    f = input()
+        
+    while int(f) == x+y:
+        x = np.random.randint(a,b)
+        y = np.random.randint(a,b)
+        print(x,"+",y)
+        f = input()
+
+    else:
+        print(x,"+",y, "=", x+y)
+        print("Please start again !")
+        main()
+
+        
+def multiplication():
+    a = int(input("Please enter the First Number : "))
+    b = int(input("Please enter the Second Number : "))
+    
+    x = np.random.randint(a, b)
+    y = np.random.randint(a, b)
+    
+    print(x,"X",y)
+    
+    f = input()
+        
+    while int(f) == x*y:
+        x = np.random.randint(a,b)
+        y = np.random.randint(a,b)
+        print(x,"X",y)
+        f = input()
+
+    else:
+        print(x,"X",y, "=", x*y)
+        print("Please start again !")
+        main()
+
+def substraction():
+    a = int(input("Please enter the First Number : "))
+    b = int(input("Please enter the Second Number : "))
+    
+    x = np.random.randint(a, b)
+    y = np.random.randint(a, b)
+    
+    print(x,"-",y)
+    
+    f = input()
+        
+    while int(f) == x-y:
+        x = np.random.randint(a,b)
+        y = np.random.randint(a,b)
+        print(x,"-",y)
+        f = input()
+
+    else:
+        print(x,"-",y, "=", x-y)
+        print("Please start again !")
+        main()
+
+def division():
+    a = int(input("Please enter the First Number : "))
+    b = int(input("Please enter the Second Number : "))
+    
+    x = np.random.randint(a, b)
+    y = np.random.randint(a, b)
+    
+    print(x,"/",y)
+    
+    f = input()
+        
+    while float(f) == x//y:
+        x = np.random.randint(a,b)
+        y = np.random.randint(a,b)
+        print(x,"/",y)
+        f = input()
+
+    else:
+        print(x,"/",y, "=", x//y)
+        print("Please start again !")
+        main()
+
+
+        
+main()
