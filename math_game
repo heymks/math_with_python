@@ -1,12 +1,13 @@
 import random as rnd
 import sys
 
-print('Please Enter the 1st No and 2nd No !')
-print('At any time you want to abort, please enter abort !')
-print('Enjoy Playing !')
-
 
 def main():
+    print('Please choose your game !')
+    print('Please Enter the 1st No and 2nd No !')
+    print('At any time you want to abort, please enter abort !')
+    print('Enjoy Playing !')
+    
     choice = input('''Please choose your Game
     For Addition > '+' 
     For Substraction > '-'
