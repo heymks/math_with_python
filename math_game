@@ -110,7 +110,6 @@ def substraction():
 
     while num1_r < num2_r:
         num1_r = rnd.randint(num1, num2)
-        num2_r = rnd.randint(num1, num2)
     else:
         pass
 
@@ -131,7 +130,6 @@ def substraction():
 
         while num1_r < num2_r:
             num1_r = rnd.randint(num1, num2)
-            num2_r = rnd.randint(num1, num2)
         else:
             pass
 
@@ -234,7 +232,6 @@ def division():
 
     while num1_r < num2_r:
         num1_r = rnd.randint(num1, num2)
-        num2_r = rnd.randint(num1, num2)
     else:
         pass
 
@@ -255,7 +252,6 @@ def division():
 
         while num1_r < num2_r:
             num1_r = rnd.randint(num1, num2)
-            num2_r = rnd.randint(num1, num2)
         else:
             pass
 
