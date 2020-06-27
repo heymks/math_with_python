@@ -22,7 +22,7 @@ def main():
         multiplication()
     elif choice == '//':
         f_division()
-    elif choice.== '/':
+    elif choice == '/':
         division()
     elif choice == '':
         print('You need to choose a Game')
@@ -34,7 +34,7 @@ def addition():
     score = []
 
     num1 = input('1st No : ')
-    if num1 == 'abort':
+    if num1.lower() == 'abort':
         sys.exit()
     else:
         while not num1.isdigit():
@@ -43,7 +43,7 @@ def addition():
             num1 = int(num1)
 
     num2 = input('2nd No : ')
-    if num2 == 'abort':
+    if num2.lower() == 'abort':
         sys.exit()
     else:
         while not num2.isdigit():
@@ -57,7 +57,7 @@ def addition():
     print('>', num1_r, '+', num2_r)
 
     answer = input('> ')
-    if answer == 'abort':
+    if answer.lower() == 'abort':
         sys.exit()
     else:
         while not answer.isdigit():
@@ -72,7 +72,7 @@ def addition():
         print('>', num1_r, '+', num2_r)
 
         answer = input('> ')
-        if answer == 'abort':
+        if answer.lower() == 'abort':
             print(f'Thanks for playing !\nYour Score is {len(score)+1}')
             sys.exit()
         else:
@@ -90,7 +90,7 @@ def substraction():
     score = []
 
     num1 = input('1st No : ')
-    if num1 == 'abort':
+    if num1.lower() == 'abort':
         sys.exit()
     else:
         while not num1.isdigit():
@@ -99,7 +99,7 @@ def substraction():
             num1 = int(num1)
 
     num2 = input('2nd No : ')
-    if num2 == 'abort':
+    if num2.lower() == 'abort':
         sys.exit()
     else:
         while not num2.isdigit():
@@ -119,7 +119,7 @@ def substraction():
     print('>', num1_r, '-', num2_r)
 
     answer = input('> ')
-    if answer == 'abort':
+    if answer.lower() == 'abort':
         sys.exit()
     else:
         while not answer.isdigit():
@@ -140,7 +140,7 @@ def substraction():
         print('>', num1_r, '-', num2_r)
 
         answer = input('> ')
-        if answer == 'abort':
+        if answer.lower() == 'abort':
             print(f'Thanks for playing !\nYour Score is {len(score)+1}')
             sys.exit()
         else:
@@ -158,7 +158,7 @@ def multiplication():
     score = []
 
     num1 = input('1st No : ')
-    if num1 == 'abort':
+    if num1.lower() == 'abort':
         sys.exit()
     else:
         while not num1.isdigit():
@@ -167,7 +167,7 @@ def multiplication():
             num1 = int(num1)
 
     num2 = input('2nd No : ')
-    if num2 == 'abort':
+    if num2.lower() == 'abort':
         sys.exit()
     else:
         while not num2.isdigit():
@@ -181,7 +181,7 @@ def multiplication():
     print('>', num1_r, 'x', num2_r)
 
     answer = input('> ')
-    if answer == 'abort':
+    if answer.lower() == 'abort':
         sys.exit()
     else:
         while not answer.isdigit():
@@ -196,7 +196,7 @@ def multiplication():
         print('>', num1_r, 'x', num2_r)
 
         answer = input('> ')
-        if answer == 'abort':
+        if answer.lower() == 'abort':
             print(f'Thanks for playing !\nYour Score is {len(score)+1}')
             sys.exit()
         else:
@@ -214,7 +214,7 @@ def f_division():
     score = []
 
     num1 = input('1st No : ')
-    if num1 == 'abort':
+    if num1.lower() == 'abort':
         sys.exit()
     else:
         while not num1.isdigit():
@@ -223,7 +223,7 @@ def f_division():
             num1 = int(num1)
 
     num2 = input('2nd No : ')
-    if num2 == 'abort':
+    if num2.lower() == 'abort':
         sys.exit()
     else:
         while not num2.isdigit():
@@ -243,7 +243,7 @@ def f_division():
     print('>', num1_r, '/', num2_r)
 
     answer = input('> ')
-    if answer == 'abort':
+    if answer.lower() == 'abort':
         sys.exit()
     else:
         while not answer.isdigit():
@@ -264,7 +264,7 @@ def f_division():
         print('>', num1_r, '/', num2_r)
 
         answer = input('> ')
-        if answer == 'abort':
+        if answer.lower() == 'abort':
             print(f'Thanks for playing !\nYour Score is {len(score)+1}')
             sys.exit()
         else:
@@ -282,7 +282,7 @@ def division():
     score = []
 
     num1 = input('1st No : ')
-    if num1 == 'abort':
+    if num1.lower() == 'abort':
         sys.exit()
     else:
         while not num1.isdigit():
@@ -291,7 +291,7 @@ def division():
             num1 = int(num1)
 
     num2 = input('2nd No : ')
-    if num2 == 'abort':
+    if num2.lower() == 'abort':
         sys.exit()
     else:
         while not num2.isdigit():
@@ -311,7 +311,7 @@ def division():
     print('>', num1_r, '/', num2_r)
 
     answer = input('> ')
-    if answer == 'abort':
+    if answer.lower() == 'abort':
         sys.exit()
     else:
         try:
@@ -341,7 +341,7 @@ def division():
         print('>', num1_r, '/', num2_r)
 
         answer = input('> ')
-        if answer == 'abort':
+        if answer.lower() == 'abort':
             print(f'Thanks for playing !\nYour Score is {len(score)+1}')
             sys.exit()
         else:
