@@ -14,17 +14,17 @@ def main():
     For F_Division > '//'
     For Division > '/'\n> ''')
 
-    if choice.lower() == '+':
+    if choice == '+':
         addition()
-    elif choice.lower() == '-':
+    elif choice == '-':
         substraction()
-    elif choice.lower() == 'x':
+    elif choice == '*':
         multiplication()
-    elif choice.lower() == '//':
+    elif choice == '//':
         f_division()
-    elif choice.lower() == '/':
+    elif choice.== '/':
         division()
-    elif choice.lower() == '':
+    elif choice == '':
         print('You need to choose a Game')
     else:
         sys.exit()
